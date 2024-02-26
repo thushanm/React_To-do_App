@@ -9,7 +9,7 @@ export function TodoFrom(props) {
 <FormControl fullWidth={true}>
     <TextField label="I Will Do This" required={true} variant="standard"/>
 
-    <Button variant="contained" style={{marginTop:5}}>Add Todo</Button>
+    <Button variant="contained" style={{marginTop:5}}>+Add</Button>
 
 </FormControl>
 
