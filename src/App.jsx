@@ -1,4 +1,5 @@
-import {ToDoList} from "./ToDoList.jsx";
+
+import {TodoFrom} from "./component/TodoFrom.jsx";
 
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
   return (
 <div>
 
-   <ToDoList/>
+ <TodoFrom/>
 </div>
   )
 }
