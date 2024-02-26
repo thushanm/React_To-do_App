@@ -1,7 +1,7 @@
 import {Card, CardContent, Container, IconButton, Typography} from "@mui/material";
 import {Check,Delete} from "@mui/icons-material"
 
-export function Todo(){
+export function Todo({title}){
     return(<Container>
 
 <Card variant="outlined" style={{marginTop:35,background:"lightgray"}}>
@@ -11,6 +11,7 @@ export function Todo(){
 <IconButton>
 <Check style={{color:"blue"}}/>
 </IconButton>
+        {title}
         <IconButton style={{float:"right"}}>
 <Delete style={{color:"red"}}/>
 </IconButton>

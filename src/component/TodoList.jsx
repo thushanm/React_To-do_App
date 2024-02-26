@@ -1,9 +1,12 @@
 import {Container} from "@mui/material";
 import {Todo} from "./Todo.jsx";
 
-export function TodoList(){
+export function TodoList({todos}){
     return(<Container>
-<Todo/>
+        {todos.map((p) => (
+            <Todo key={p.id} title={p.title}/>
+        ))}
+
     </Container>)
 
 }
