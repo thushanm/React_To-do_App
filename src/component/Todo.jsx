@@ -3,10 +3,9 @@ import {Check,Delete} from "@mui/icons-material"
 
 export function Todo({title,checkTodo,id,isComplete,deleteTodo}){
     const markComplete=()=> checkTodo(id);
-    const delTodo = ()=> deleteTodo(id)
     const todoStyle = isComplete
-        ? {textDecoration:"line-through"}
-        :{textDecoration: "none"};
+        ?{textDecoration:"line-through"} : {textDecoration:"none"};
+    const delTodo = ()=> deleteTodo(id)
     return(<Container>
 
 <Card variant="outlined" style={{marginTop:35,background:"lightgray"}}>
