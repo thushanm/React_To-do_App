@@ -23,9 +23,13 @@ const [todos,setTodos] = useState([
     }
 
 ])
+    const addButton =(text)=>{
+    console.log(text)
+
+    }
   return (
 <div>
- <TodoFrom/>
+ <TodoFrom addButton={addButton}/>
 <TodoList todos={todos}/>
 
 </div>
