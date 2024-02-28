@@ -7,6 +7,7 @@ export function TodoFrom({addButton}) {
     const handelSubmit =(e)=>{
         e.preventDefault()
         addButton(text);
+        setText("")
     }
     return (
         <Container maxWidth="sm">
